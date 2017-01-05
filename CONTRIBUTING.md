@@ -1,4 +1,4 @@
-# Contributing to Leaf-assistant.js
+# Contributing to Leaf-ai.js
 
 ## Code of Conduct
 
