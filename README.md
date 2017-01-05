@@ -21,10 +21,6 @@ Once you have setup your environment, run:
 
     grunt
 
-## Contribute & Develop
-
-We've set up a separate document for our [contribution guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md).
-
 ## Quick Example
 
 	[
@@ -38,13 +34,13 @@ We've set up a separate document for our [contribution guidelines](https://githu
 				"four. ",
 				"five. ",
 				"six. "
-			],
-			"footer": [
-				"Good job.",
-				"That's great."
 			]
 		}
 	]
+
+## Contribute & Develop
+
+We've set up a separate document for our [contribution guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md).
 
 ## Browser Support
 
