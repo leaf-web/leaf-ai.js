@@ -25,6 +25,27 @@ Once you have setup your environment, run:
 
 We've set up a separate document for our [contribution guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md).
 
+## Quick Example
+
+	[
+		{
+			"pattern": "Roll the dice",
+			"header": "You rolled a ",
+			"content": [
+				"one. ",
+				"two. ",
+				"three. ",
+				"four. ",
+				"five. ",
+				"six. "
+			],
+			"footer": [
+				"Good job.",
+				"That's great."
+			]
+		}
+	]
+
 ## Browser Support
 
 | Browser            | Version |
