@@ -25,15 +25,18 @@ Once you have setup your environment, run:
 
 	[
 		{
-			"pattern": "Roll the dice",
+			"pattern": [
+				"Roll the dice",
+				"Roll a six sided die"
+			],
 			"header": "You rolled a ",
 			"content": [
-				"one. ",
-				"two. ",
-				"three. ",
-				"four. ",
-				"five. ",
-				"six. "
+				"one.",
+				"two.",
+				"three.",
+				"four.",
+				"five.",
+				"six."
 			]
 		}
 	]
