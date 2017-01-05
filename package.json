@@ -1,0 +1,22 @@
+{
+  "name": "leaf-ai.js",
+  "description": "A leaf.js plugin for creating AI bots.",
+  "version": "1.0.0",
+  "author": "Eric Harms",
+  "repository": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.11.0",
+    "http-server": "~0.6.1",
+	"grunt-karma": "^0.8.3",
+    "karma": "^0.12.17",
+    "jasmine-core": "^2.3.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-firefox-launcher": "~0.1"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+  },
+  "license": "MIT"
+}
