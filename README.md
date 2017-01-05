@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/leaf-web/leaf.js.svg?branch=master)](https://travis-ci.org/leaf-web/leaf-ai.js)
+[![Build Status](https://travis-ci.org/leaf-web/leaf-ai.js.svg?branch=master)](https://travis-ci.org/leaf-web/leaf-ai.js)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/leaf-web/leaf-ai.js/master/LICENSE)
 
 # Leaf-ai.js
