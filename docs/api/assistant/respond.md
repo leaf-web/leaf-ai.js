@@ -6,7 +6,7 @@ Executes a success callback if a match if found, and passes in the response and 
 
 ## Usage
 
-assistant.PatternList;
+assistant.respond(pattern, success, failure);
 
 ### Options
 
