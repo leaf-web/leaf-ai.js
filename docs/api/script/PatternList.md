@@ -1,4 +1,4 @@
-# assistant.PatternList
+# ai.PatternList
 
 The leaf.List containing of patterns.
 
@@ -6,7 +6,7 @@ The leaf.List containing of patterns.
 
 ## Usage
 
-assistant.PatternList;
+ai.PatternList;
 
 ----------------------------------------------------------------------
 
@@ -18,14 +18,14 @@ assistant.PatternList;
             <script src="scripts/leaf-assistant.min.js"></script>
 
 			<script>
-                leaf.assistant.PatternList = new leaf.List([
+                leaf.ai.PatternList = new leaf.List([
                     {
                         "pattern": "Hello",
                         "respond": "Hello, how can I help you today?"
                     }
                 ]);
 
-                leaf.assistant.respond("Hello leaf.",
+                leaf.ai.respond("Hello leaf.",
                     function(response, model) {
                         console.log(response);
                     },

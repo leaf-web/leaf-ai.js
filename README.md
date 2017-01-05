@@ -5,7 +5,8 @@
 
 Leaf-ai.js is plugin for creating simple AI bots.
 
-* [API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/api.md)
+* [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/json.md)
+* [Script API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/script.md)
 * [Contribution Guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md)
 * [Gitter](https://gitter.im/leaf-js/lobby)
 
@@ -23,21 +24,16 @@ Once you have setup your environment, run:
 
 ## Quick Example
 
+See the [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/json.md) to see how to write patterns.
+
 	[
 		{
 			"pattern": [
-				"Roll the dice",
-				"Roll a six sided die"
-			],
-			"header": "You rolled a ",
-			"content": [
-				"one.",
-				"two.",
-				"three.",
-				"four.",
-				"five.",
-				"six."
+				"Good morning",
+				"Good afternoon",
+				"Good evening"
 			]
+			"content": "Hello. How may I assist you?"
 		}
 	]
 

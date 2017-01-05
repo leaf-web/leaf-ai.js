@@ -1,4 +1,4 @@
-# assistant.respond
+# ai.respond
 
 Executes a success callback if a match if found, and passes in the response and Model.
 
@@ -6,7 +6,7 @@ Executes a success callback if a match if found, and passes in the response and 
 
 ## Usage
 
-assistant.respond(pattern, success, failure);
+ai.respond(pattern, success, failure);
 
 ### Options
 
@@ -26,14 +26,14 @@ assistant.respond(pattern, success, failure);
             <script src="scripts/leaf-assistant.min.js"></script>
 
 			<script>
-                leaf.assistant.PatternList = new leaf.List([
+                leaf.ai.PatternList = new leaf.List([
                     {
                         "pattern": "Hello",
                         "respond": "Hello, how can I help you today?"
                     }
                 ]);
 
-                leaf.assistant.respond("Hello leaf.",
+                leaf.ai.respond("Hello leaf.",
                     function(response, model) {
                         console.log(response);
                     },
