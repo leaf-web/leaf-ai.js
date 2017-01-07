@@ -9,7 +9,7 @@
 	},
 	{
 	  "pattern": "heads or tails",
-	  "header": "Okay, I'm picking ",
+	  "header": "Okay, I'm going with ",
 	  "content": [
 	    "heads.",
 	    "tails."
