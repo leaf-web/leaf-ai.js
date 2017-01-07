@@ -1,6 +1,6 @@
 # Tips
 
-Here are a few helpful tips when creating your AI bot.
+Here are five helpful tips when creating your AI bot.
 
 ## 1. Concat Libraries
 
@@ -52,4 +52,15 @@ You can use custom keywords to extend the bot's functionality.
         });
     });
 
+## 5. Use Handlebars
 
+You can use a `leaf.Model` to replace strings between double brackets with values.
+	
+	var ReplacementsModel = new leaf.Model({
+		"firstName": "John", 
+		"lastName": "Doe"
+	});
+	
+    leaf.ai.respond('some question', function(response, model) {
+        console.log(ReplacementsModel.template(response));
+    });
