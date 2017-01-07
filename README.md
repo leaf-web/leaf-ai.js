@@ -33,7 +33,7 @@ See the [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/
 				"Good morning",
 				"Good afternoon",
 				"Good evening"
-			]
+			],
 			"content": "Hello. How may I assist you?"
 		}
 	]
