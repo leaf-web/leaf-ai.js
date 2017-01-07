@@ -1,0 +1,17 @@
+[
+    {
+        "pattern": [
+	     "Hello",
+		"Hi",
+          "Good morning",
+          "Good afternoon",
+       	"Good evening"
+	  ],
+	  "header:": [
+	   	"Hello.",
+		"Hi.",
+		"Hi there."
+	  ],
+       "content": " Can I help you with something today?"
+    }
+]
