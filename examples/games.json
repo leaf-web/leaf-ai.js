@@ -1,0 +1,11 @@
+[
+  {
+    "pattern": "flip a coin",
+    "header": "Okay, it's ",
+    "content": [
+      "heads.",
+      "tails."
+    ]
+  }
+]
+ 
