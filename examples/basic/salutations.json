@@ -1,0 +1,18 @@
+[
+	{
+		"pattern": [
+			"Good bye",
+			"Bye",
+			"Good night",
+			"I need to go",
+			"Talk to you later"
+		],
+		"header:": "Okay. ",
+		"content": [
+			"Good bye.",
+			"Bye.",
+			"Talk to you later.",
+			"Have a good one."
+		]
+	}
+]
