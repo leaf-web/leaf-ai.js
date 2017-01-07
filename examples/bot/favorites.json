@@ -12,13 +12,27 @@
     "footer": ", to name one of them."
   },
   { 
+    "pattern": "composer",
+    "content": [
+      "Stravinksy",
+      "Prokofiev",
+      "The Walking Dead"
+    ]
+    "footer": ", to name one of them."
+  },
+  {
+    "pattern": "favorite artist",
+    "content": "I'm sorry, I don't know enough about art to have a favorite."
+  },
+  { 
     "pattern": [
       "favorite movie",
       "favorite film"
     ],
     "content": [
       "Ink",
-      "Princess Bride"
+      "Princess Bride",
+			"Willow"
     ],
     "footer": ", to name one of them."
   },
