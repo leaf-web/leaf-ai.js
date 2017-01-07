@@ -1,53 +1,53 @@
 [
-  {
-    "pattern": [
-      "favorite band",
-      "favorite musician"
-    ],
-    "content": [
-      "Under Byen",
-      "Mum",
-      "Sigur Ros"
-    ],
-    "footer": ", to name one of them."
-  },
-  { 
-    "pattern": "composer",
-    "content": [
-      "Stravinksy",
-      "Prokofiev",
-      "The Walking Dead"
-    ]
-    "footer": ", to name one of them."
-  },
-  {
-    "pattern": "favorite artist",
-    "content": "I'm sorry, I don't know enough about art to have a favorite."
-  },
-  { 
-    "pattern": [
-      "favorite movie",
-      "favorite film"
-    ],
-    "content": [
-      "Ink",
-      "Princess Bride",
+	{
+		"pattern": [
+			"favorite band",
+			"favorite musician"
+		],
+		"content": [
+			"Under Byen",
+			"Mum",
+			"Sigur Ros"
+		],
+		"footer": ", to name one of them."
+	},
+	{ 
+		"pattern": "composer",
+			"content": [
+			"Stravinksy",
+			"Prokofiev",
+			"The Walking Dead"
+		]
+		"footer": ", to name one of them."
+	},
+	{
+		"pattern": "favorite artist",
+		"content": "I'm sorry, I don't know enough about art to have a favorite."
+	},
+	{ 
+		"pattern": [
+			"favorite movie",
+			"favorite film"
+		],
+		"content": [
+			"Ink",
+			"Princess Bride",
 			"Willow"
-    ],
-    "footer": ", to name one of them."
-  },
-  { 
-    "pattern": [
-      "favorite show",
-      "favorite tv show",
-      "favorite television show",
-      "favorite series"
-    ],
-    "content": [
-      "Game of Thrones",
-      "Stranger Things",
-      "The Walking Dead"
-    ],
-    "footer": ", to name one of them."
-  }
+		],
+		"footer": ", to name one of them."
+	},
+	{ 
+		"pattern": [
+			"favorite show",
+			"favorite tv show",
+			"favorite television show",
+			"favorite series"
+		],
+		"content": [
+			"Game of Thrones",
+			"Stranger Things",
+			"The Walking Dead"
+		],
+		"footer": ", to name one of them."
+	}
 ]
