@@ -6,6 +6,18 @@
       "heads.",
       "tails."
     ]
-  }
+  },
+	{
+		"pattern": "roll a die",
+		"header": "Okay, it's ",
+		"content": [
+			"One.",
+			"Two.",
+			"Three.",
+			"Four.",
+			"Five.",
+			"Six."
+		]
+	}
 ]
  
