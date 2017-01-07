@@ -1,4 +1,4 @@
-# 1.1.0 (1/7/2017)
+# 1.0.0(1/7/2017)
 
 * Added: Karma tests
 * Added: Travis CI support
@@ -9,6 +9,6 @@
 * Fixed: Syntax error on README.md example
 * Removed: Npm install information on README.md for now
 
-# 1.0.0 (1/5/2017)
+# 0.0.1 (1/5/2017)
 
 * Initial release.
