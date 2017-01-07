@@ -12,12 +12,6 @@ Leaf-ai.js is plugin for creating simple AI bots. It is small, extendible, and b
 * [Contribution Guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md)
 * [Gitter](https://gitter.im/leaf-js/lobby)
 
-## Installing Leaf-ai.js
-
-Install using Npm:
-
-	$ npm install --save leaf-ai.js
-
 ## Building Leaf-ai.js
 
 Once you have setup your environment, run:
