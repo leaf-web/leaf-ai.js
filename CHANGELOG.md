@@ -6,6 +6,7 @@
 * Added: Script API Reference
 * Added: Tips
 * Added: Example Patterns
+* Added: Links to the documentation and examples in README.md
 * Fixed: Syntax error on README.md example
 * Removed: Npm install information on README.md for now
 
