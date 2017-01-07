@@ -1,0 +1,18 @@
+[
+	{
+	  "pattern": "flip a coin",
+	  "header": "It landed on ",
+	  "respond": [
+	    "heads.",
+	    "tails."
+	  ]
+	},
+	{
+	  "pattern": "heads or tails",
+	  "header": "Okay, I'm picking ",
+	  "respond": [
+	    "heads.",
+	    "tails."
+	  ]
+	}
+]
