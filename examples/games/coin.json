@@ -2,7 +2,7 @@
 	{
 	  "pattern": "flip a coin",
 	  "header": "It landed on ",
-	  "respond": [
+	  "content": [
 	    "heads.",
 	    "tails."
 	  ]
@@ -10,7 +10,7 @@
 	{
 	  "pattern": "heads or tails",
 	  "header": "Okay, I'm picking ",
-	  "respond": [
+	  "content": [
 	    "heads.",
 	    "tails."
 	  ]
