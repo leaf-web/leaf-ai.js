@@ -1,4 +1,4 @@
-# 1.0.0(1/7/2017)
+# 1.0.0 (1/7/2017)
 
 * Added: Karma tests
 * Added: Travis CI support
