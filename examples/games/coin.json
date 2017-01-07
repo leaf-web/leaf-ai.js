@@ -1,18 +1,18 @@
 [
 	{
-	  "pattern": "flip a coin",
-	  "header": "It landed on ",
-	  "content": [
-	    "heads.",
-	    "tails."
-	  ]
+		"pattern": "flip a coin",
+	  	"header": "It landed on ",
+	  	"content": [
+	    		"heads.",
+	    		"tails."
+	  	]
 	},
 	{
-	  "pattern": "heads or tails",
-	  "header": "Okay, I'm going with ",
-	  "content": [
-	    "heads.",
-	    "tails."
-	  ]
+		"pattern": "heads or tails",
+	  	"header": "Okay, I'm going with ",
+	  	"content": [
+	    		"heads.",
+	    	"tails."
+	  	]
 	}
 ]
