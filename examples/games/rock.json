@@ -1,0 +1,22 @@
+[
+	{
+		"pattern": "rock, paper, scissors, lizard, spock",
+	  	"header": "Okay. I picked ",
+	  	"content": [
+	    		"rock.",
+	    		"paper.",
+			"scissors.",
+			"lizard.",
+			"spock."
+	  	]
+	},
+	{
+		"pattern": "rock, paper, scissors",
+	  	"header": "Okay. I picked ",
+	  	"content": [
+	    		"rock.",
+	    		"paper.",
+			"scissors."
+	  	]
+	}
+]
