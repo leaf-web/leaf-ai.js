@@ -7,6 +7,7 @@ Leaf-ai.js is plugin for creating simple AI bots.
 
 * [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/json.md)
 * [Script API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/script.md)
+* [Tips](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/tips.md)
 * [Contribution Guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md)
 * [Gitter](https://gitter.im/leaf-js/lobby)
 
