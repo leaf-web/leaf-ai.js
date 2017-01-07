@@ -1,0 +1,39 @@
+[
+  {
+    "pattern": [
+      "favorite band",
+      "favorite musician"
+    ],
+    "content": [
+      "Under Byen",
+      "Mum",
+      "Sigur Ros"
+    ]
+    "footer": ", to name one of them."
+  },
+  { 
+    "pattern": [
+      "favorite movie",
+      "favorite film"
+    ],
+    "content": [
+      "Ink",
+      "Princess Bride"
+    ]
+    "footer": ", to name one of them."
+  },
+  { 
+    "pattern": [
+      "favorite show",
+      "favorite tv show",
+      "favorite television show",
+      "favorite series"
+    ],
+    "content": [
+      "Game of Thrones",
+      "Stranger Things",
+      "The Walking Dead"
+    ]
+    "footer": ", to name one of them."
+  }
+]
