@@ -2,7 +2,7 @@
 	{
 		"pattern": "roll a four-sided",
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
@@ -15,7 +15,7 @@
 			"roll a six-sided die"
 		],
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
@@ -27,7 +27,7 @@
 	{
 		"pattern": "roll a eight-sided die",
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
@@ -41,7 +41,7 @@
 	{
 		"pattern": "roll a ten-sided die",
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
@@ -60,7 +60,7 @@
 			"roll a twelve-sided die"
 		],
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
@@ -78,7 +78,7 @@
 	{
 		"pattern": "roll a twenty-sided die",
 		"header": "Okay, it's ",
-		"respond": [
+		"content": [
 			"one.",
 			"two.",
 			"three.",
