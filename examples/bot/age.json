@@ -7,13 +7,17 @@
       "when were you coded",
       "what is your birthdate"
     ],
-    "content": "I was born on January 5th, 2017."
+    "content": [
+    	"I was born on January 5th, 2017."
+	]
   },
-  { 
+  {
     "pattern": [
       "what is your age",
       "hold old are you"
     ],
-    "content": "I'm not even a year old."
+    "content": [
+    	"I'm not even a year old."
+	]
   }
 ]

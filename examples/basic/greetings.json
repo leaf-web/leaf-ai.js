@@ -12,6 +12,8 @@
 			"Hi.",
 			"Hi there."
 		],
-		"content": " Can I help you with something today?"
+		"content": [
+			" Can I help you with something today?"
+		]
 	}
 ]

@@ -19,10 +19,17 @@ ai.PatternList;
 
 			<script>
                 leaf.ai.PatternList = new leaf.List([
-                    {
-                        "pattern": "Hello",
-                        "respond": "Hello, how can I help you today?"
-                    }
+					[
+						{
+							"pattern": [
+								"Flip a coin"
+							],
+							"response": [
+								"It's heads.",
+								"It's tails."
+							]
+						}
+					]
                 ]);
 
                 leaf.ai.respond("Hello leaf.",

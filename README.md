@@ -29,7 +29,9 @@ See the [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/
 				"Good afternoon",
 				"Good evening"
 			],
-			"content": "Hello. How may I assist you?"
+			"content": [
+				"Hello. How may I assist you?"
+			]
 		}
 	]
 

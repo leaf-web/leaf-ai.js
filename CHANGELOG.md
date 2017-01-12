@@ -1,3 +1,8 @@
+# 2.0.0 (1/7/2017)
+
+* Added: Wildcard support
+* Changed: JSON elements only accept Array data types
+
 # 1.0.0 (1/7/2017)
 
 * Added: Karma tests

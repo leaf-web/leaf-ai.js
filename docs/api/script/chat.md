@@ -1,12 +1,14 @@
-# ai.respond
+# ai.chat
 
-Executes a success callback if a match if found, and passes in the response and Model.
+Executes a callback based on the the success of a match.
+
+> The success callback gets the response and model passed as arguments.
 
 ----------------------------------------------------------------------
 
 ## Usage
 
-ai.respond(pattern, success, failure);
+ai.chat(pattern, success, failure);
 
 ### Options
 
@@ -26,14 +28,21 @@ ai.respond(pattern, success, failure);
             <script src="scripts/leaf-assistant.min.js"></script>
 
 			<script>
-                leaf.ai.PatternList = new leaf.List([
-                    {
-                        "pattern": "Hello",
-                        "respond": "Hello, how can I help you today?"
-                    }
-                ]);
+                leaf.ai.PatternList = new leaf.List(
+					[
+						{
+							"pattern": [
+								"Flip a coin"
+							],
+							"response": [
+								"It's heads.",
+								"It's tails."
+							]
+						}
+					]
+                );
 
-                leaf.ai.respond("Hello leaf.",
+                leaf.ai.respond("Flip a coin",
                     function(response, model) {
                         console.log(response);
                     },

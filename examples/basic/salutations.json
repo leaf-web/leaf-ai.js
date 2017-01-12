@@ -7,7 +7,9 @@
 			"I need to go",
 			"Talk to you later"
 		],
-		"header:": "Okay. ",
+		"header:": [
+			"Okay. "
+		],
 		"content": [
 			"Good bye.",
 			"Bye.",

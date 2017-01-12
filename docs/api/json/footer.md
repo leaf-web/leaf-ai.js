@@ -1,19 +1,19 @@
 # footer keyword
 
-The `footer` keyword appends text to the response.
+The `footer` keyword defines the possible footer values for the response. One is picked randomly.
 
 ----------------------------------------------------------------------
 
 ## Usage
 
-"footer": "value"
+"content": "value"
+
 
 ### Options
 
 | Options         | Type          | Details                          |
 | --------------- | ------------- | -------------------------------- |
-| value           | `string`      | Text to prepend.                 |
-|                 | `Array`       | Random text to prepend.          |
+| value           | `Array`       | The footers                      |
 
 ----------------------------------------------------------------------
 
@@ -21,19 +21,18 @@ The `footer` keyword appends text to the response.
 
 	[
 		{
-			"pattern": "Roll a die."
+			"pattern": [
+				"Flip a coin"
+			],
 			"header": [
-				"You rolled a ",
-				"It landed on "
+				"It landed on"
 			],
 			"content": [
-				"one.",
-				"two.",
-				"three.",
-				"four.",
-				"five.",
-				"six."
+				"heads.",
+				"tails."
 			],
-			"footer": " Do you want to play again?"
+			"footer": [
+				" Did you guess it correctly?"
+			]
 		}
 	]

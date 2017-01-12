@@ -4,6 +4,8 @@
 			"yes",
 			"no"
 		],
-		"content": "Okay."
+		"content": [
+			"Okay."
+		]
 	}
 ]

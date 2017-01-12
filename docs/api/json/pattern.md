@@ -1,20 +1,19 @@
 # pattern keyword
 
-The `pattern` keyword is used to match on user input.
+The `pattern` keyword defines the pattern to match a message against.
 
+> Use an astrisk for a wildcard character.
 ----------------------------------------------------------------------
 
 ## Usage
 
 "pattern": "value"
 
-
 ### Options
 
 | Options         | Type          | Details                          |
 | --------------- | ------------- | -------------------------------- |
-| value           | `string`      | Single pattern.                  |
-|                 | `Array`       | Multiple patterns to match on.   |
+| value           | `Array`       | The patterns                     |
 
 ----------------------------------------------------------------------
 
@@ -26,8 +25,10 @@ The `pattern` keyword is used to match on user input.
 				"Good morning",
 				"Good afternoon",
 				"Good evening"
+			],
+			"content": [
+				"Hello. How may I assist you?"
 			]
-			"content": "Hello. How may I assist you?"
 		}
 	]
 

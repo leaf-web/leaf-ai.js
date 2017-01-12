@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
 		'tests/libs/leaf.min.js',
 		'builds/leaf-ai.min.js',
-		'tests/respond.js'
+		'tests/chat.js'
     ],
 
 

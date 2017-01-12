@@ -1,139 +1,115 @@
-/**
- * @namespace leaf.ai
- * @property {Object} PatternList The List of Patterns
- */
 leaf.ai = {
-    PatternList: new leaf.List(),
+	PatternList: new leaf.List(),
     /**
-     * Executes a success callback if a match if found, and passes in the response and Model.
+     * Executes a callback based on the the success of a match.
      * @memberOf leaf.ai
      * @param {string} The pattern.
      * @param {Function} success The callback callback
      * @param {Function} failure The failure callback
      * @returns {string} The response.
      */
-    respond: function(pattern, success, failure) {
-        var result;
-        /**
-        * Determines if a pattern exist.
-        * @private
-        * @param {Object} model The Model.
-        * @returns {Boolean} True if the pattern exists in the Model.
-        */
-        function contains(model) {
-            /**
-             * Handle a string pattern
-             */
-            if(leaf.isString(model.get('pattern'))) {
-                return pattern.indexOf(filter(model.get('pattern'))) != -1;
-            }
-            /**
-             * Handle an Array pattern
-             */
-            if(leaf.isArray(model.get('pattern'))) {
-                for (var index = 0; index < model.get('pattern').length; index++) {
-                    if(pattern.indexOf(filter(model.get('pattern')[index])) != -1) {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-        /**
-        * Return the response if a pattern exists.
-        * @private
-        * @param {Object} model The Model.
-        * @returns {string} The response.
-        */
-        function respond(model) {
-        	var header = "", content = "", footer = "";
-
-            /**
-             * Handle a string header
-             */
-            if(leaf.isDefined(model.get('header')) && leaf.isString(model.get('header')) ) {
-                header = model.get('header');
-            }
-
-            /**
-             * Handle an Array header
-             */
-            if(leaf.isDefined(model.get('header')) && leaf.isArray(model.get('header')) ) {
-                header = random(model.get('header'));
-            }
-
-            /**
-             * Handle a string content
-             */
-            if(leaf.isDefined(model.get('content')) && leaf.isString(model.get('content'))) {
-                content = model.get('content');
-            }
-
-            /**
-             * Handle an Array content
-             */
-            if(leaf.isDefined(model.get('content')) && leaf.isArray(model.get('content'))) {
-                content = random(model.get('content'));
-            }
-
-            /**
-             * Handle a string footer
-             */
-            if(leaf.isDefined(model.get('footer')) && leaf.isString(model.get('footer')) ) {
-                footer = model.get('footer');
-            }
-
-            /**
-             * Handle an Array footer
-             */
-            if(leaf.isDefined(model.get('footer')) && leaf.isArray(model.get('footer')) ) {
-                footer = random(model.get('footer'));
-            }
-
-            return header + content + footer;
-        }
-        /**
-        * Returns a random response if multiple responses are given.
-        * @private
-        * @param {Object} data The Array.
-        * @returns {string} The response.
-        */
-        function random(data) {
-            return data[Math.floor(Math.random() * data.length)];
-        }
-        /**
-         * Removes punctuation and lower cases a value for better string
-         * comparisons.
-         * @private
-         * @param {string} value The value.
-         * @returns {string} The filtered value.
-         */
-        function filter(value) {
-            return value.toLowerCase().replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
-        }
-        /**
-         * Filter the pattern.
-         */
-        pattern = filter(pattern);
-        /**
-         * Iterate through the List and look for a match. If a match was found,
-         * assign result to it.
-         */
-        this.PatternList.each(function(model) {
-            if(contains(model) === true) {
-                result = model;
-            }
-        });
-        /**
-         * Execute the appropriate callback Function. If the result is a Model, pass
-         * the response and the result to the success callback.
-         */
-        if (leaf.isDefined(result)) {
-            success(respond(result), result);
-        }
-        else {
-            failure();
-        }
-    }
+	chat: function(message, success, failure) {
+		var result; // = undefined
+		/**
+		 * Return a value without punctuation, spacing, and capitalization.
+		 * @name getFiltered
+		 * @private
+		 * @param {string} value The value
+		 * @return {string} The value
+		 */
+		function getFiltered(value) {
+			return value.replace(/[^a-z0-9*]/gi,"").toLowerCase();
+		}
+		/**
+		 * Return a random value from an Array containing possible responses.
+		 * @name getRandom
+		 * @private
+		 * @param {Array} data The array
+		 * @return {string} The value
+		 */
+		function getRandom(data) {
+			return data[Math.floor(Math.random() * data.length)];
+		}
+		/**
+		 * Return a concatenated string composed of the response's header,
+		 * content, and footer.
+		 * @name getRandom
+		 * @private
+		 * @param  {Object} model The model
+		 * @return {string} The response
+		 */
+		function getResponse(model) {
+			var response = "";
+			/**
+			 * Append the header
+			 */
+			if (leaf.isDefined(model.get('header'))) {
+				response += getRandom(model.get('header'));
+			}
+			/**
+			 * Append the content
+			 */
+			if (leaf.isDefined(model.get('content'))) {
+				response += getRandom(model.get('content'));
+			}
+			/**
+			 * Append the footer
+			 */
+			if (leaf.isDefined(model.get('footer'))) {
+				response += getRandom(model.get('footer'));
+			}
+			/**
+			 * Return the response.
+			 */
+			return response;
+		}
+		/**
+		 * Determines if the value is matched against a pattern.
+		 * @name getResponse
+		 * @private
+		 * @param {string} pattern The pattern
+		 * @param {string} value The value
+		 * @return {Boolean} True if the value is matched against a pattern.
+		 */
+		function isMatch(pattern, value) {
+			/**
+			 * Normalize the data.
+			 */
+			pattern = getFiltered(pattern);
+			  value = getFiltered(value);
+			/**
+			 * Return the response.
+			 */
+		  	return new RegExp("^" + pattern.split("*").join(".*") + "$").test(value);
+		}
+		/**
+		 * Iterate through the models, looking for a match between a message
+		 * and a pattern.
+		 */
+		this.PatternList.each(function(model) {
+			model.get('pattern').forEach(function(item) {
+				if(isMatch(item, message)) {
+					result = model;
+				}
+			});
+		});
+		/**
+		 * Execute the proper callback depending on the success of finding a
+		 * match.
+		 */
+		if(leaf.isDefined(result)) {
+			if (leaf.isFunction(success)) {
+				/**
+				 * Execute success()
+				 */
+				success(getResponse(result), result);
+			}
+		}
+		else {
+			if(leaf.isFunction(failure)) {
+				failure();
+			}
+		}
+		return message;
+	}
 };

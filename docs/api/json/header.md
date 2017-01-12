@@ -1,19 +1,19 @@
 # header keyword
 
-The `header` keyword prepends text to the response.
+The `header` keyword defines the possible header values for the response. One is picked randomly.
 
 ----------------------------------------------------------------------
 
 ## Usage
 
-"header": "value"
+"content": "value"
+
 
 ### Options
 
 | Options         | Type          | Details                          |
 | --------------- | ------------- | -------------------------------- |
-| value           | `string`      | Text to append.                  |
-|                 | `Array`       | Random text to append.           |
+| value           | `Array`       | The headers                      |
 
 ----------------------------------------------------------------------
 
@@ -21,18 +21,15 @@ The `header` keyword prepends text to the response.
 
 	[
 		{
-			"pattern": "Roll a die."
+			"pattern": [
+				"Flip a coin"
+			],
 			"header": [
-				"You rolled a ",
-				"It landed on "
+				"It landed on"
 			],
 			"content": [
-				"one.",
-				"two.",
-				"three.",
-				"four.",
-				"five.",
-				"six."
+				"heads.",
+				"tails."
 			]
 		}
 	]

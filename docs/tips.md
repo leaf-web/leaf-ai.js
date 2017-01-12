@@ -5,7 +5,7 @@ Here are five helpful tips when creating your AI bot.
 ## 1. Concat Libraries
 
 Maintain the patterns in seperate files and concat them with `grunt-contrib-concat`.
-    
+
     concat: {
       dest: {
         src:  'src/**/*.json',
@@ -17,7 +17,7 @@ Maintain the patterns in seperate files and concat them with `grunt-contrib-conc
         separator: ',',
       }
     },
-    
+
 ## 2. Compress Libraries
 
 Use `grunt-json-minify` to improve the bot's performance.
@@ -27,7 +27,7 @@ Use `grunt-json-minify` to improve the bot's performance.
         files: 'build/assistant.json'
       }
     },
-    
+
 ## 3. Load Libraries
 
 You can use the `fetch` method to load your external JSON files.
@@ -37,14 +37,14 @@ You can use the `fetch` method to load your external JSON files.
         // Main code
         //
     });
-    
+
 ## 4. Extend the Bot
 
 You can use custom keywords to extend the bot's functionality.
 
-    leaf.ai.respond('some question', function(response, model) {
+    leaf.ai.chat('some question', function(response, model) {
         console.log(response);
-        
+
         if(leaf.isDefined(model.get('custom-keyword'))) {
             //
             // If the keyword exists in the model, run this code.
@@ -55,12 +55,12 @@ You can use custom keywords to extend the bot's functionality.
 ## 5. Use Handlebars
 
 You can use a `leaf.Model` to replace strings between double brackets with values.
-	
+
 	var ReplacementsModel = new leaf.Model({
-		"firstName": "John", 
+		"firstName": "John",
 		"lastName": "Doe"
 	});
-	
+
     leaf.ai.respond('some question', function(response, model) {
         console.log(ReplacementsModel.template(response));
     });

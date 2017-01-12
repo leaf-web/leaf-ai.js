@@ -1,6 +1,7 @@
 # Development files
 .sublime-grunt.cache
 node_modules/
+tests/html-tester.html
 
 # Windows image file caches
 Thumbs.db

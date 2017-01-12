@@ -1,6 +1,6 @@
 # content keyword
 
-The `content` keyword contains the response to the user.
+The `content` keyword defines the possible content values for the response. One is picked randomly.
 
 ----------------------------------------------------------------------
 
@@ -13,8 +13,7 @@ The `content` keyword contains the response to the user.
 
 | Options         | Type          | Details                          |
 | --------------- | ------------- | -------------------------------- |
-| value           | `string`      | A response.                      |
-|                 | `Array`       | A random response.               |
+| value           | `Array`       | The responses                    |
 
 ----------------------------------------------------------------------
 
@@ -22,10 +21,12 @@ The `content` keyword contains the response to the user.
 
 	[
 		{
-			"pattern": "Flip a coin"
+			"pattern": [
+				"Flip a coin"
+			],
 			"content": [
-				"Heads.",
-				"Tails."
+				"heads.",
+				"tails."
 			]
 		}
 	]
