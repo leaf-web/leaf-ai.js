@@ -44,13 +44,13 @@ leaf.ai = {
 			 * Append the header
 			 */
 			if (leaf.isDefined(model.get('header'))) {
-				response += getRandom(model.get('header'));
+				response += getRandom(model.get('header')) + " ";
 			}
 			/**
 			 * Append the content
 			 */
 			if (leaf.isDefined(model.get('content'))) {
-				response += getRandom(model.get('content'));
+				response += getRandom(model.get('content')) + " ";
 			}
 			/**
 			 * Append the footer
