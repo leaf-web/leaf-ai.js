@@ -1,3 +1,7 @@
+# 2.1.0 (1/7/2017)
+
+* Added: Topic support
+
 # 2.0.0 (1/7/2017)
 
 * Added: Wildcard support

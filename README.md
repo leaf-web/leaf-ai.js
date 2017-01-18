@@ -8,7 +8,6 @@ Leaf-ai.js is plugin for creating simple AI bots. It is small, extendible, and b
 * [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/json.md)
 * [Script API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/script.md)
 * [Tips](https://github.com/leaf-web/leaf-ai.js/blob/master/docs/tips.md)
-* [Example Patterns](https://github.com/leaf-web/leaf-ai.js/tree/master/examples)
 * [Contribution Guidelines](https://github.com/leaf-web/leaf-ai.js/blob/master/CONTRIBUTING.md)
 * [Gitter](https://gitter.im/leaf-js/lobby)
 
@@ -25,9 +24,9 @@ See the [JSON API Reference](https://github.com/leaf-web/leaf-ai.js/blob/master/
 	[
 		{
 			"pattern": [
-				"Good morning",
-				"Good afternoon",
-				"Good evening"
+				"Good morning *",
+				"Good afternoon *",
+				"Good evening *"
 			],
 			"content": [
 				"Hello. How may I assist you?"

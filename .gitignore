@@ -2,6 +2,7 @@
 .sublime-grunt.cache
 node_modules/
 tests/html-tester.html
+tests/chat.js
 
 # Windows image file caches
 Thumbs.db

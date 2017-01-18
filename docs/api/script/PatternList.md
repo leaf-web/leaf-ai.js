@@ -18,13 +18,13 @@ ai.PatternList;
             <script src="scripts/leaf-assistant.min.js"></script>
 
 			<script>
-                leaf.ai.PatternList = new leaf.List([
+                leaf.ai.PatternList.merge([
 					[
 						{
 							"pattern": [
 								"Flip a coin"
 							],
-							"response": [
+							"content": [
 								"It's heads.",
 								"It's tails."
 							]
@@ -32,7 +32,7 @@ ai.PatternList;
 					]
                 ]);
 
-                leaf.ai.respond("Hello leaf.",
+                leaf.ai.respond("Flip a coin.",
                     function(response, model) {
                         console.log(response);
                     },

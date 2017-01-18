@@ -6,5 +6,7 @@
 
 Contains the core functionality.
 
-* [PatternList](api/script/PatternList.md)
 * [chat](api/script/chat.md)
+* [PatternList](api/script/PatternList.md)
+* [TopicList](api/script/TopicList.md)
+

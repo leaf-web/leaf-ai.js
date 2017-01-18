@@ -1,5 +1,7 @@
 leaf.ai = {
 	PatternList: new leaf.List(),
+	TopicList: undefined,
+
     /**
      * Executes a callback based on the the success of a match.
      * @memberOf leaf.ai
@@ -83,22 +85,44 @@ leaf.ai = {
 		  	return new RegExp("^" + pattern.split("*").join(".*") + "$").test(value);
 		}
 		/**
-		 * Iterate through the models, looking for a match between a message
-		 * and a pattern.
+		 * Return a model if it's pattern matches the message.
+		 * @name getResult
+		 * @private
+		 * @param  {Object} list The List.
+		 * @return {Object} The Model.
 		 */
-		this.PatternList.each(function(model) {
-			model.get('pattern').forEach(function(item) {
-				if(isMatch(item, message)) {
-					result = model;
-				}
+		function getResult(list) {
+			var result;
+
+			list.each(function(model) {
+				model.get('pattern').forEach(function(item) {
+					if(isMatch(item, message)) {
+						result = model;
+					}
+				});
 			});
-		});
+
+			return result;
+		}
+		/**
+		 * Get the result
+		 */
+		if(leaf.isUndefined(this.TopicList)) {
+			result = getResult(this.PatternList);
+		}
+		else {
+			result = getResult(this.TopicList);
+		}
 		/**
 		 * Execute the proper callback depending on the success of finding a
 		 * match.
 		 */
 		if(leaf.isDefined(result)) {
 			if (leaf.isFunction(success)) {
+				/**
+				 * Execute success()
+				 */
+				this.TopicList = new leaf.List(result.get("topic")) || undefined;
 				/**
 				 * Execute success()
 				 */
