@@ -1,6 +1,6 @@
 # 2.1.1 (1/19/2017)
 
-* Fixed: Matching stops when a result is hit. Making the order of rules important.
+* Fixed: Matching stops once a result is hit.
 
 # 2.1.0 (1/18/2017)
 
