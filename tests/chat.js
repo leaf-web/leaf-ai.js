@@ -6,36 +6,18 @@ describe('Patterns', function() {
 	 * Pattern Array
 	 */
 	it('Pattern Array', function() {
-leaf.ai.PatternList = new leaf.List([
-					[
-						{
-							"pattern": [
-								"I like basketball"
-							],
-							"content": [
-								"I do too. Do you like football?"
-							],
-							"topic": [
-								{
-									pattern: [
-										"yes",
-									],
-									"content": [
-										"Me too!"
-									]
-								},
-								{
-									pattern: [
-										"no",
-									],
-									"content": [
-										"I enjoy it more than basketball."
-									]
-								},
-							]
-						}
-					]
-                ]);
+		leaf.ai.PatternList = new leaf.List([
+			{
+				"pattern": [
+					"Hello",
+					"Hi",
+					"Good morning"
+				],
+				"content": [
+					"Hello."
+				]
+			}
+		]);
 
 		leaf.ai.chat("Hi leaf-ai.", function(response) {
 			expect(response).toBe('Hello.');

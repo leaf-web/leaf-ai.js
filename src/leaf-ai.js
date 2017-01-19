@@ -96,7 +96,7 @@ leaf.ai = {
 
 			list.each(function(model) {
 				model.get('pattern').forEach(function(item) {
-					if(isMatch(item, message)) {
+					if(isMatch(item, message) && leaf.isUndefined(result)) {
 						result = model;
 					}
 				});

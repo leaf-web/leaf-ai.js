@@ -1,4 +1,8 @@
-# 2.1.0 (1/7/2017)
+# 2.1.1 (1/19/2017)
+
+* Fixed: Matching stops when a result is hit. Making the order of rules important.
+
+# 2.1.0 (1/18/2017)
 
 * Added: Topic support
 
